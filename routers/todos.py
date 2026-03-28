@@ -11,7 +11,7 @@ router = APIRouter(
     tags=["todos"]
 )
 
-templates = Jinja2Templates(directory="TodoApp/templates")
+templates = Jinja2Templates(directory="templates")
 
 
 # --- Pages ---

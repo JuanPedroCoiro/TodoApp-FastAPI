@@ -17,7 +17,7 @@ router = APIRouter(prefix="/auth", tags=["auth"])
 SECRET_KEY = '588d349958d99a234962dc3929ed65a265835324d44af0f623bd39ce417af5c6'
 ALGORITHM = 'HS256'
 bcrypt_context = CryptContext(schemes=["bcrypt"], deprecated='auto')
-templates = Jinja2Templates(directory="TodoApp/templates")
+templates = Jinja2Templates(directory="templates")
 
 
 # --- DB dependency ---
