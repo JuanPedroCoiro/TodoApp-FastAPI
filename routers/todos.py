@@ -2,8 +2,8 @@ from fastapi import APIRouter, Depends, HTTPException, Request, status
 from sqlalchemy.orm import Session
 from typing import Annotated
 from ..database import SessionLocal
-from ..models import Todos
-from ..routers.auth import get_current_user, db_dependency
+from models import Todos
+from routers.auth import get_current_user, db_dependency
 from fastapi.templating import Jinja2Templates
 
 router = APIRouter(

@@ -9,8 +9,8 @@ from passlib.context import CryptContext
 from jose import jwt, JWTError
 from pydantic import BaseModel
 
-from ..database import SessionLocal
-from ..models import Users
+from database import SessionLocal
+from models import Users
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
