@@ -65,8 +65,9 @@ if (registerForm) {
             if (response.ok) {
                 window.location.href = '/auth/login-page';
             } else {
-                const errorData = await response.json();
-                alert(`Error: ${errorData.message || errorData.detail}`);
+                const errorData = await response.text();
+                console.error(text)
+                alert(`Error: ${text}`);
             }
         } catch (error) {
             console.error('Register error:', error);
